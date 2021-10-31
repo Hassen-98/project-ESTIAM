@@ -1,0 +1,49 @@
+.App {
+    text-align: center;
+  }
+  
+  .img{
+      text-align: left;
+      margin-top: 10px;
+      width: 150px;
+  }
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+
+
+  .content{
+      margin-top: 10px;
+      display: inline-block;
+      border: 4px solid black; padding: 5px;
+      margin: 25px 10px;
+  }
+  
+  .App-header {
+      margin-top: 20px;
+      margin-left: 100px;
+      margin-right: 100px;
+    background-color: #282c34;
+    min-height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
