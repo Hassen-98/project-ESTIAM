@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
-import Button from '../../../components/common/button';
-import Card from '../../../components/common/card';
-import sauces, { Sauce } from '../../../data/sauces.data'
-import * as Styled from './selector.styled';
+import React, { useState } from "react";
+import Button from "../../../components/common/button";
+import Card from "../../../components/common/card";
+import sauces, { Sauce } from "../../../data/sauces.data";
+import * as Styled from "./selector.styled";
 
 interface Props {
   onProceed: (sauces: Sauce[]) => void;
@@ -24,22 +24,29 @@ const SaucesSelector = (props: Props) => {
             isSelected={selectedSauces.includes(sauce.slug)}
             onSelect={(isSelected) => {
               if (isSelected) {
-                if (selectedSauces.length < 3) {
+                if (selectedSauces.length < 2) {
                   setSelectedSauces(selectedSauces.concat(sauce.slug));
                 }
               } else {
-                setSelectedSauces(selectedSauces.filter(s => s !== sauce.slug));
+                setSelectedSauces(
+                  selectedSauces.filter((s) => s !== sauce.slug)
+                );
               }
-            }} />
+            }}
+          />
         ))}
       </Styled.ElementWrapper>
 
       <Button
         name="Continuer"
-        onClick={() => props.onProceed(sauces.filter(sauce => selectedSauces.includes(sauce.slug)))} />
-
+        onClick={() =>
+          props.onProceed(
+            sauces.filter((sauce) => selectedSauces.includes(sauce.slug))
+          )
+        }
+      />
     </Styled.SelectorWrapper>
-  )
-}
+  );
+};
 
-export default SaucesSelector
+export default SaucesSelector;
