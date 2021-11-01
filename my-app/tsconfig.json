@@ -22,5 +22,5 @@
   },
   "include": [
     "src"
-  ]
+, "../selector/breads-selector.tsx", "../home"  ]
 }
