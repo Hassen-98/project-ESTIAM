@@ -4,7 +4,7 @@ import * as Styled from "./home.styled";
 import Button from "../../components/common/button";
 import kebabs, { Kebab } from "../../data/kebabs.data";
 import Card from "../../components/common/card";
-
+import * as Style from '../../components/header/header.styled'
 interface Props {
   cart: {
     kebab: Kebab;
@@ -79,6 +79,11 @@ const Home = (props: Props) => {
             </Styled.CartItem>
           ))}
         </Styled.CartItemList>
+        <Style.HeaderWrapper>
+      <a href={`${process.env.PUBLIC_URL}`}>
+      <button >🗑️</button>
+      </a>
+    </Style.HeaderWrapper>
       </Styled.Cart>
     </div>
   );
