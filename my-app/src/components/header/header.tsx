@@ -1,5 +1,5 @@
 import React from 'react'
-import * as Styled from './header'
+import * as Styled from './header.styled'
 
 const Header = (props: {}) => {
   return (

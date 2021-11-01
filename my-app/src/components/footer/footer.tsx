@@ -1,5 +1,5 @@
 import React from 'react'
-import * as Styled from './footer';
+import * as Styled from './footer.styled';
 
 interface Props {
   
