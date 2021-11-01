@@ -3,7 +3,7 @@ import { Route, useHistory } from "react-router-dom";
 import { Kebab as IKebab } from '../../data/kebabs.data';
 import Kebab from '../kebab/kebab';
 import BreadsSelector from './selector/breads-selector';
-import FillingsSelector from './selector/fillings-selector';
+import FillingsSelector from './config-kebab/selector/fillings-selector';
 import MeatsSelector from './selector/meats-selector';
 import SaucesSelector from './selector/sauces-selector';
 
