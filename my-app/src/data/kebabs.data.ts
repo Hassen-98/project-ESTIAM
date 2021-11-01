@@ -16,8 +16,8 @@ export interface Kebab {
 
 const kebabs: Kebab[] = [
   {
-    name: "Le Classique",
-    slug: "classic",
+    name: "L'ancien",
+    slug: "ancien",
     price: 5.5,
     image: `${process.env.PUBLIC_URL}/assets/kebabs/kebab-classic.jpg`,
     bread: breads.find((bread) => bread.slug === "pain")!!,
@@ -31,8 +31,8 @@ const kebabs: Kebab[] = [
     sauces: sauces.filter((sauce) => sauce.slug === "blanche"),
   },
   {
-    name: "Le Vege",
-    slug: "vege",
+    name: "Le moldu",
+    slug: "mold",
     price: 6.0,
     image: `${process.env.PUBLIC_URL}/assets/kebabs/kebab-vege.jpg`,
     bread: breads.find((bread) => bread.slug === "pain")!!,
@@ -41,8 +41,8 @@ const kebabs: Kebab[] = [
     sauces: sauces.filter((sauce) => sauce.slug === "blanche"),
   },
   {
-    name: "Le BBQ",
-    slug: "bbq",
+    name: "Le radical",
+    slug: "radical",
     price: 6.0,
     image: `${process.env.PUBLIC_URL}/assets/kebabs/kebab-bbq.jpg`,
     bread: breads.find((bread) => bread.slug === "pain")!!,
@@ -53,7 +53,7 @@ const kebabs: Kebab[] = [
         filling.slug === "tomate" ||
         filling.slug === "oignon"
     ),
-    sauces: sauces.filter((sauce) => sauce.slug === "bbq"),
+    sauces: sauces.filter((sauce) => sauce.slug === "harissa"),
   },
 ];
 export default kebabs;
